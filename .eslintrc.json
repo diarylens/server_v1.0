@@ -1,0 +1,69 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "unused-imports", "prettier"],
+  "extends": [
+    "airbnb",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": [
+    "**/dist/**/*.*",
+    ".yarn/**/*",
+    "node_modules",
+    "yarn.lock"
+  ],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "import/prefer-default-export": "off",
+    "import/order": "off",
+    "camelcase": [
+      "error",
+      {
+        "allow": ["co_id"] // 허용할 snake_case 변수 이름을 명시
+      }
+    ],
+    "array-callback-return": "off",
+    "no-alert": "off",
+    "import/extensions": "off",
+    "consistent-return": "error",
+    "no-use-before-define": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "lines-between-class-members": "off",
+    "no-return-await": "off",
+    "no-shadow": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["state", "ctx"]
+      }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "no-underscore-dangle": "off"
+  }
+}
