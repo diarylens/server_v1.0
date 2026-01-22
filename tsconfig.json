@@ -1,6 +1,15 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "paths": {
+      "@/*": ["src/*"],
+      "@apis/*": ["src/apis/*"],
+      "@constants/*": ["src/constants/*"],
+      "@common/*": ["src/common/*"],
+      "@utils/*": ["src/utils/*"],
+      "@guard/*": ["src/guard/*"],
+      "@decorator/*": ["src/decorator/*"],
+    },
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,

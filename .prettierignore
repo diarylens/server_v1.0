@@ -19,21 +19,6 @@ lerna-debug.log*
 /coverage
 /.nyc_output
 
-# Configuration
-.env
-.env.local
-.env.*.local
-
-# IDE
-.vscode
-.idea
-*.swp
-*.swo
-
-# Package files
-package-lock.json
-yarn.lock
-
 # IDEs and editors
 /.idea
 .project
